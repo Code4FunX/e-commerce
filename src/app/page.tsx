@@ -86,9 +86,7 @@ export default function Home() {
               -&gt;
             </span>
           </h2>
-          <p className={'m-0 max-w-[30ch] text-sm opacity-50'}>
-            Next.js 13
-          </p>
+          <p className={'m-0 max-w-[30ch] text-sm opacity-50'}>Next.js 13</p>
         </a>
 
         <a
