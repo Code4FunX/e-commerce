@@ -5,26 +5,26 @@ import { GoChevronDown } from 'react-icons/go'
 
 export const Header = () => {
   return (
-    <header className="flex justify-center w-full py-4">
-      <div className="w-full xl:container flex justify-between items-center">
-        <div className="flex justify-center items-center gap-x-2">
+    <header className="flex w-full justify-center py-4">
+      <div className="custom-container flex w-full items-center justify-between">
+        <div className="flex items-center justify-center gap-x-2">
           <Image src="/brand.png" alt="logo" width={56} height={56} />
-          <span className="text-3xl text-blue-500 font-bold">Brand</span>
+          <span className="text-3xl font-bold text-blue-500">Brand</span>
         </div>
-        <div className="flex-1 flex px-24 h-10">
+        <div className="flex h-10 flex-1 px-24">
           <input
-            className="border-2 border-blue-600 rounded-s-md w-full"
+            className="w-full rounded-s-md border-2 border-blue-600"
             type="text"
           />
-          <div className="flex justify-center items-center h-auto gap-x-3 px-2 border-y-2 border-e-2 border-blue-600">
+          <div className="flex h-auto items-center justify-center gap-x-3 border-y-2 border-e-2 border-blue-600 px-2">
             <span className="text-base">Categorias</span>
             <GoChevronDown className="text-xl text-gray-500" />
           </div>
-          <button className="px-4 bg-blue-600 text-white rounded-e-md">
+          <button className="rounded-e-md bg-blue-600 px-4 text-white">
             Pesquisar
           </button>
         </div>
-        <div className="flex justify-center items-center gap-x-5">
+        <div className="flex items-center justify-center gap-x-5">
           <div className="flex flex-col items-center gap-y-0.5">
             <FaUser className="text-xl text-gray-500" />
             <span className="text-gray-500">Perfil</span>
