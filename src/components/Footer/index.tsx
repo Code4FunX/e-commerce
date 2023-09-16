@@ -42,14 +42,16 @@ export const Footer = ({ showNewsLetter = true }: IFooterProps) => {
           <FooterLinkSection title="For users" links={forUsersLinks} />
           <div>
             <h6 className="mb-3  font-medium text-gray-700">Get app</h6>
-            <Image src={AppleStoreIcon} alt="logo" width={150} height={56} />
-            <Image
-              src={GooglePlayIcon}
-              alt="logo"
-              className="mt-2"
-              width={150}
-              height={56}
-            />
+            <div className="flex gap-x-4 md:mt-2 md:flex-col md:gap-y-2">
+              <Image src={AppleStoreIcon} alt="logo" width={150} height={56} />
+              <Image
+                src={GooglePlayIcon}
+                alt="logo"
+                className=""
+                width={150}
+                height={56}
+              />
+            </div>
           </div>
         </div>
       </div>
