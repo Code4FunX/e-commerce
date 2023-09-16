@@ -23,6 +23,5 @@ export const POST = async (req: NextRequest) => {
   return NextResponse.json({
     fullName,
     email,
-    hash,
   })
 }
