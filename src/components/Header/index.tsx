@@ -32,25 +32,25 @@ export const Header = () => {
             <Link href="/">
               <div className="flex flex-col items-center gap-y-0.5">
                 <FaUser className="text-xl text-gray-500" />
-                <span className="text-gray-500">Perfil</span>
+                <span className="text-gray-500">Profile</span>
               </div>
             </Link>
             <Link href="/">
               <div className="flex flex-col items-center gap-y-0.5">
                 <MdMessage className="text-xl text-gray-500" />
-                <span className="text-gray-500">Mensagem</span>
+                <span className="text-gray-500">Message</span>
               </div>
             </Link>
             <Link href="/">
               <div className="flex flex-col items-center gap-y-0.5">
                 <FaHeart className="text-xl text-gray-500" />
-                <span className="text-gray-500">Pedido</span>
+                <span className="text-gray-500">Orders</span>
               </div>
             </Link>
             <Link href="/">
               <div className="flex flex-col items-center gap-y-0.5">
                 <FaShoppingCart className="text-xl text-gray-500" />
-                <span className="text-gray-500">Carrinho</span>
+                <span className="text-gray-500">My cart</span>
               </div>
             </Link>
           </div>
