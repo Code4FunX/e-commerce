@@ -6,7 +6,7 @@ import AleFlag from '@/assets/contry-flags/ale-flag.svg'
 
 export const SubHeader = () => {
   return (
-    <div className="flex w-full justify-center border-b bg-white">
+    <div className="hidden w-full justify-center border-b bg-white lg:flex">
       <div className="custom-container flex w-full items-center justify-between py-3">
         <div className="flex gap-x-6">
           <Link href="/">
