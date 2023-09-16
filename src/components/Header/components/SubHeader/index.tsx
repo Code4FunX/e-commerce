@@ -11,7 +11,7 @@ export const SubHeader = () => {
         <div className="flex gap-x-6">
           <Link href="/">
             <div className="flex items-center justify-center gap-x-1">
-              <BiMenu className="text-xl text-black" />
+              <BiMenu className="text-2xl text-black" />
               <span>All category</span>
             </div>
           </Link>
