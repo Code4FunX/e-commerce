@@ -6,13 +6,14 @@ import LogoWithName from '@/assets/logo-with-name.svg'
 
 export const Header = () => {
   return (
-    <header className="flex w-full justify-center py-4">
+    <header className="flex w-full justify-center bg-white py-4">
       <div className="custom-container flex w-full items-center justify-between">
         <Image src={LogoWithName} alt="logo" width={150} height={56} />
-        <div className="flex h-10 flex-1 px-24">
+        <div className="hidden h-10 flex-1 px-24 md:flex">
           <input
-            className="w-full rounded-s-md border-2 border-blue-600"
+            className="w-full rounded-s-md border-2 border-blue-600 px-3"
             type="text"
+            placeholder="Search"
           />
           <div className="flex h-auto items-center justify-center gap-x-3 border-y-2 border-e-2 border-blue-600 px-2">
             <span className="text-base">Categorias</span>
@@ -22,7 +23,7 @@ export const Header = () => {
             Pesquisar
           </button>
         </div>
-        <div className="flex items-center justify-center gap-x-5">
+        <div className="hidden items-center justify-center gap-x-5 md:flex">
           <div className="flex flex-col items-center gap-y-0.5">
             <FaUser className="text-xl text-gray-500" />
             <span className="text-gray-500">Perfil</span>
