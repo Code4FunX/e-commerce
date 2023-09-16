@@ -1,10 +1,9 @@
-import Image from 'next/image'
-import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa'
-import { MdMessage } from 'react-icons/md'
-import { GoChevronDown } from 'react-icons/go'
 import LogoWithName from '@/assets/logo-with-name.svg'
+import Image from 'next/image'
 import Link from 'next/link'
+import { GoChevronDown } from 'react-icons/go'
 import { SubHeader } from './components/SubHeader'
+import { menuItems } from './menuItems'
 
 export const Header = () => {
   return (
@@ -29,30 +28,14 @@ export const Header = () => {
             </button>
           </div>
           <div className="hidden items-center justify-center gap-x-5 md:flex">
-            <Link href="/">
-              <div className="flex flex-col items-center gap-y-0.5">
-                <FaUser className="text-xl text-gray-500" />
-                <span className="text-gray-500">Profile</span>
-              </div>
-            </Link>
-            <Link href="/">
-              <div className="flex flex-col items-center gap-y-0.5">
-                <MdMessage className="text-xl text-gray-500" />
-                <span className="text-gray-500">Message</span>
-              </div>
-            </Link>
-            <Link href="/">
-              <div className="flex flex-col items-center gap-y-0.5">
-                <FaHeart className="text-xl text-gray-500" />
-                <span className="text-gray-500">Orders</span>
-              </div>
-            </Link>
-            <Link href="/">
-              <div className="flex flex-col items-center gap-y-0.5">
-                <FaShoppingCart className="text-xl text-gray-500" />
-                <span className="text-gray-500">My cart</span>
-              </div>
-            </Link>
+            {menuItems.map((menuItem) => (
+              <Link key={menuItem.name} href={menuItem.link}>
+                <div className="flex flex-col items-center gap-y-0.5">
+                  {menuItem.icon}
+                  <span className="text-gray-500">{menuItem.name}</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </header>
