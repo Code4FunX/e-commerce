@@ -56,7 +56,7 @@ export const Header = () => {
           </div>
         </div>
       </header>
-      <SubHeader></SubHeader>
+      <SubHeader />
     </>
   )
 }
