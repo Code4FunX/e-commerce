@@ -33,7 +33,6 @@ export const Header = () => {
               Pesquisar
             </button>
           </div>
-          <button onClick={() => ref?.current?.open()}>open</button>
           <div className="hidden items-center justify-center gap-x-5 md:flex">
             {menuItems.map((menuItem) => (
               <Link key={menuItem.name} href={menuItem.link}>
