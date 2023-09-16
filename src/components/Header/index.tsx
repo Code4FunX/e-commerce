@@ -3,12 +3,15 @@ import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa'
 import { MdMessage } from 'react-icons/md'
 import { GoChevronDown } from 'react-icons/go'
 import LogoWithName from '@/assets/logo-with-name.svg'
+import Link from 'next/link'
 
 export const Header = () => {
   return (
     <header className="flex w-full justify-center bg-white py-4">
       <div className="custom-container flex w-full items-center justify-between">
-        <Image src={LogoWithName} alt="logo" width={150} height={56} />
+        <Link href="/">
+          <Image src={LogoWithName} alt="logo" width={150} height={56} />
+        </Link>
         <div className="hidden h-10 flex-1 px-24 md:flex">
           <input
             className="w-full rounded-s-md border-2 border-blue-600 px-3"
