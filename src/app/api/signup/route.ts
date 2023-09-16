@@ -15,7 +15,7 @@ export const POST = async (req: NextRequest) => {
     return NextResponse.json({ message: 'Bad request' }, { status: 400 })
   }
 
-  const hash = bcrypt.hashSync(password, 10)
+  const hash = bcrypt.hashSync(password, 10) // we could use Dependency Inversion here
 
   user = await usersRepositoryMock.save(
     new User({ id: '2', fullName, email, password: hash })
