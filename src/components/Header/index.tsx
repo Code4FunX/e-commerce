@@ -1,11 +1,17 @@
+'use client'
+
 import LogoWithName from '@/assets/logo-with-name.svg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { GoChevronDown } from 'react-icons/go'
+import { MobileDrawer } from './components/MobileDrawer'
 import { SubHeader } from './components/SubHeader'
 import { menuItems } from './menuItems'
+import { useHeaderController } from './useHeaderController'
 
 export const Header = () => {
+  const { ref } = useHeaderController()
+
   return (
     <>
       <header className="flex w-full justify-center border-b bg-white py-4 ">
@@ -27,6 +33,7 @@ export const Header = () => {
               Pesquisar
             </button>
           </div>
+          <button onClick={() => ref?.current?.open()}>open</button>
           <div className="hidden items-center justify-center gap-x-5 md:flex">
             {menuItems.map((menuItem) => (
               <Link key={menuItem.name} href={menuItem.link}>
@@ -40,6 +47,7 @@ export const Header = () => {
         </div>
       </header>
       <SubHeader />
+      <MobileDrawer ref={ref} />
     </>
   )
 }
