@@ -2,7 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background: #f8f9fa;
+}
+
 .custom-container {
   width: min(1280px, 90%);
   margin-inline: auto;
+}
+
+.truncate-4-lines {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
