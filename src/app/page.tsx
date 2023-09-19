@@ -1,7 +1,9 @@
+import { Banner } from './components/Banner'
+
 export default function Home() {
   return (
-    <main>
-      <div className="min-h-screen"></div>
+    <main className="custom-container flex w-full">
+      <Banner />
     </main>
   )
 }
